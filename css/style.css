@@ -14,7 +14,7 @@
 .logo img {
     width: 64px;
     height: 64px;
-    margin-left: 100px;
+    margin-left: 80px;
     border-radius: 30px;
 }
 
@@ -23,9 +23,15 @@
 }
 
 .link a {
+    display: block;
+    padding: 20px;
     text-decoration: none;
     margin-right: 40px;
     color: #fff;
+}
+
+.link a:hover {
+    background-color: rgb(139, 139, 139);
 }
 
 .banner {
@@ -69,4 +75,87 @@
 
 .card-container .card p{
     padding:10px;
+}
+
+.form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+input[type=text], select{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+input[type=text]:focus{
+    background-color: aquamarine;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 13px 20px;
+    margin-top: 10px;
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .LinkDiv {
+        display: none;
+    }
+    .link {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .icon {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0px;
+    }
 }

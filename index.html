@@ -8,15 +8,20 @@
     <title>Responsive Design 2</title>
 </head>
 <body>
-    <div class="header">
+    <div id="HeaderDiv" class="header">
+        <div class="icon" onclick="Toggle()">
+            <img src="images/icon.jpg" alt="" width="50px" height="50px">
+        </div>
         <div class="logo">
             <img src="images/logo.jpg" alt="">
         </div>
-        <div class="link">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+        <div id="NavDiv" class="LinkDiv">
+            <div class="link">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
     </div>
 
@@ -50,5 +55,137 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, neque eum autem, labore libero quae perspiciatis delectus dolores voluptate, facilis voluptatem? Alias nisi dicta aliquid velit, molestiae et illo modi?</p>
         </div>
     </div>
+
+    <div class="form">
+        <form>
+            <label>Ad</label>
+            <input type="text" name="FirstName" placeholder="Adınızı Giriniz:">
+
+            <label>Soyad</label>
+            <input type="text" name="SecondName" placeholder="Soyadınızı Giriniz:">
+
+            <label>Gender:</label>
+            <input name="gender" type="radio" id="Men" checked="checked"/> Erkek 
+            <input name="gender" type="radio" id="Women"/> Kadın
+
+            <br>
+            <br>
+
+            <label class="DateOfBirthday">Doğum Tarihi:</label>
+            <select id="Day">
+                <option value="">Gün</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select id="Month">
+                <option value="">Ay</option>
+                <option value="Ocak">Ocak</option>
+                <option value="Şubat">Şubat</option>
+                <option value="Mart">Mart</option>
+                <option value="Nisan">Nisan</option>
+                <option value="Mayıs">Mayıs</option>
+                <option value="Haziran">Haziran</option>
+                <option value="Temmuz">Temmuz</option>
+                <option value="Ağustos">Ağustos</option>
+                <option value="Eylül">Eylül</option>
+                <option value="Ekim">Ekim</option>
+                <option value="Kasım">Kasım</option>
+                <option value="Aralık">Aralık</option>
+            </select> 
+
+            <select id="Year">
+                <option value="">Yıl</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+            
+            <label>Doğum Yeri:</label>
+            <select id="PlaceOfBirthday">
+                <option value="">D.Yeri</option>
+                <option value="Adana">Adana</option>
+                <option value="Batman">Batman</option>
+                <option value="Çanakkale">Çanakkale</option>
+                <option value="Diyarbakır">Diyarbakır</option>
+                <option value="Edirne">Edirne</option>
+                <option value="Gaziantep">Gaziantep</option>
+                <option value="Hakkari">Hakkari</option>
+                <option value="Iğdır">Iğdır</option>
+                <option value="İstanbul">İstanbul</option>
+                <option value="İzmir">İzmir</option>
+                <option value="Kahramanmaraş">Kahramanmaraş</option>
+                <option value="Malatya">Malatya</option>
+                <option value="Nevşehir">Nevşehir</option>
+                <option value="Ordu">Ordu</option>
+                <option value="Siirt">Siirt</option>
+                <option value="Şanlıurfa">Şanlıurfa</option>
+                <option value="Tunceli">Tunceli</option>
+                <option value="Uşak">Uşak</option>
+                <option value="Van">Van</option>
+                <option value="Yalova">Yalova</option>
+                <option value="Zonguldak">Zonguldak</option>
+            </select>
+
+            <label>E-Mail:</label>
+            <input id="Mail" value="Email Giriniz" type="text"/>
+
+            <input type="submit" value="Kaydet">
+        </form>
+    </div>
+
+    <div class="footer">
+        <h3>Frontend Web Design  && Tüm Hakları Saklıdır.</h3>
+        <h5>Copyright © 2022 MazeSoft</h5>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
